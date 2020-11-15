@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0
+    }
+
+    div {
+      height: 100px;
+      width: 100px;
+      overflow: auto;
+    }
+
+    p {
+      height: 1000px;
+      width: 1000px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+<div><p></p></div>
+<script>
+  let div = document.querySelector("div");
+  console.log(div.scrollHeight, div.scrollWidth);
+</script>
+</body>
+</html>

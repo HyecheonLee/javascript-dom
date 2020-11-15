@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    div {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      border: 25px solid gray;
+      padding: 25px;
+      /*box-sizing: border-box;*/
+    }
+  </style>
+</head>
+<body>
+<div><span style="background: blue;display: block;width: 100%;height: 100%"></span></div>
+<script>
+  let div = document.querySelector("div").getBoundingClientRect();
+  console.log(div.height, div.width);
+  let div2 = document.querySelector("div");
+  console.log(div2.offsetHeight, div2.offsetWidth);
+</script>
+</body>
+</html>
